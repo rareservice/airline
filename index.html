@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyTravel - Book Cheap Flights</title>
+    <style>
+        /* CSS STYLES */
+        :root {
+            --primary: #0056b3; /* Airline Blue */
+            --dark: #0f172a;    /* Dark Background */
+            --light: #f8f9fa;   /* Text Color */
+            --accent: #00c6ff;  /* Cyan Accent */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(15, 23, 42, 0.9);
+            border-bottom: 1px solid #334155;
+        }
+        .logo { font-size: 24px; font-weight: bold; color: var(--accent); }
+        .nav-links a { color: var(--light); text-decoration: none; margin-left: 20px; font-weight: 500; }
+
+        /* Hero Section (The Main Area) */
+        .hero {
+            height: 90vh; /* Takes up most of the screen */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* Background Image of a Plane */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 { font-size: 48px; margin-bottom: 10px; }
+        .hero p { font-size: 18px; margin-bottom: 40px; color: #cbd5e1; }
+
+        /* THE SEARCH WIDGET CONTAINER */
+        .search-container {
+            background: rgba(255, 255, 255, 0.1); /* Glass effect */
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 90%;
+            max-width: 1000px; /* Limits width so it looks good */
+            min-height: 200px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background: #1e293b;
+        }
+        .feature-box {
+            text-align: center;
+            max-width: 300px;
+        }
+        .feature-box h3 { color: var(--accent); margin-bottom: 10px; }
+
+        /* Footer */
+        footer { text-align: center; padding: 20px; background: #000; color: #888; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">✈ DevorlFlights</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Destinations</a>
+            <a href="#">Support</a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Find Your Next Adventure</h1>
+        <p>Compare cheap flights from over 1000 airlines worldwide.</p>
+
+        <div class="search-container">
+            
+            <h3 style="color:white; padding:20px;">[Widget Loading...]</h3>
+             </div>
+
+    </div>
+
+    <div class="features">
+        <div class="feature-box">
+            <h3>Best Price Guarantee</h3>
+            <p>We compare PIA, Emirates, Qatar, and more to find the lowest price.</p>
+        </div>
+        <div class="feature-box">
+            <h3>24/7 Support</h3>
+            <p>Need help with your booking? Our team is here to assist you.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Secure Payment</h3>
+            <p>Book with confidence using our secure encryption technology.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Devorl Flights. All rights reserved.
+    </footer>
+
+</body>
+</html>
